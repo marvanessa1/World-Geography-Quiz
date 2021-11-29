@@ -51,13 +51,54 @@ mainContentEl.appendChild(StartQuiz);
 
 QuizInstructions.className = "mainContentHeader";
 QuizInstructions.id = "QuizInstructions";
-QuizInstructions.setAttribute("style", "margin:auto; width:75%; padding 15px; line-height: 1.25");
+QuizInstructions.setAttribute("style", "margin:auto; padding 15px; line-height: 1.25");
 StartQuiz.id = "StartQuizButton";
 
 var StartQuizButton = document.querySelector('#StartQuizButton');
 var QuizInstructionsEl = document.querySelector('#QuizIntructions');
 
-StartQuizButton.addEventListener("click",timer);
+// StartQuizButton.addEventListener("click", QuizCountdown);
+
+// Clear Content
+
+function clearMainContent(){
+    mainContentEl.innerHTML = "";
+};
+
+function clearQuizCountdown (){
+    var quizCountdown = document.querySelector('#QuizCountdown')
+    quizCountdown.innerHTML = "";
+}
+
+function BeginQuiz(){
+
+}
+
+function DeliverQuestion (){
+
+}
+
+function DeliverNextQuestion (){
+
+}
+
+function QuizCountdown (){
+
+}
+
+function FinishQuiz (){
+
+}
+
+function IncompleteQuiz(){
+
+}
+
+function RestartQuiz (){
+
+}
+
+
 
 
 
