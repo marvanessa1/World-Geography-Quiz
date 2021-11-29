@@ -23,6 +23,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 30px;
 }
 
 section {
@@ -32,11 +33,4 @@ section {
     background-color: white;
     border-radius: 8px;
     text-align: center;
-}
-h3 {
-    padding: 10px;
-}
-h3:hover {
-   
-    background-color: green;
 }
