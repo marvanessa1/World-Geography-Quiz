@@ -1,7 +1,7 @@
 //HTML elemements by Id
 
 // header
-var
+var timerEl = document.getElementById('timer')
 
 // Welcome section
 var welcomeEl = document.getElementById('welcomeMessage');
@@ -22,6 +22,8 @@ var resultsFormEl = document.getElementById('resultsForm');
 var finalScoreEl = document.getElementById('finalScore');
 var initialsEL = document.getElementById('scoreInitials');
 var submitScoreEl = document.getElementById('submitScore')
+
+// quiz questions object containing: question, answer, and correct answer arrays
 
 var quizQuestions = [{
     question: "How many continents are on Earth?",
@@ -60,6 +62,35 @@ var quizQuestions = [{
     },
 
 ]
+
+// function to start timer
+
+function startTimer() {
+    var timeLeft = 75;
+  
+    // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+    var timeInterval = setInterval(function () {
+      // As long as the `timeLeft` is greater than 1
+
+        // Set the `textContent` of `timerEl` to show the remaining seconds
+        timeLeft--;
+        timerEl.textContent = timeLeft;
+    
+        if (timeLeft <= 0) {
+        // Once `timeLeft` gets to 0, set `timerEl` to an empty string
+        timerEl.textContent = '';
+        // Use `clearInterval()` to stop the timer
+        clearInterval(timeInterval);
+        endQuiz()
+      }
+    }, 1000);
+  }
+
+  
+
+  function endQuiz(){
+
+  }
 
 
 
