@@ -19,6 +19,23 @@ header {
     color: black;
 }
 
+.high-scores-btn {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.high-scores {
+    text-decoration: none;
+    color: white;
+}
+
+
 main {
     flex-direction: row;
     flex-wrap: wrap;
