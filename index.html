@@ -10,17 +10,41 @@
 <body>
     <header>
         <h1>World Geography Quiz</h1>
-        <button class="high-scores-btn"><a class="high-scores" href="highScores.html">Highscores Placeholder</a></button>
+        <button class="high-scores-btn"><a class="high-scores" href="highScores.html">View High Scores</a></button>
+        <h3>Seconds left: 75</h3>
         
     </header>
 
     <main>
-        <section >
-            <div class = "mainContent">   
+        <section  class="welcomeMessage" id="welcomeMessage">
+            <h2>Welcome!</h2>  
+            <p>Up for a challenge? You have 75 seconds to finish this quiz regarding word geography.  For razzle dazzle, incorrect answers will dock off 5 seconds from your timer, thus 5 seconds from your score. Press 'Start' to begin. Good luck!</p>
+            <button class="startButton" id="startButton">Start</button>
+        </section>
+
+        <section  class="questions" id="quizQuestions">
+            <h2>Question Placeholder</h2> 
+            <div class="answerChoices">
+                <button class ="answer-choice" id="answerButton1">Answer 1</button>
+                <br>
+                <button class ="answer-choice" id="answerButton2">Answer 2</button>
+                <br>
+                <button class ="answer-choice"  id="answerButton3">Answer 3</button>
+                <br>
+                <button class ="answer-choice"  id="answerButton4">Answer 4</button>
+            </div> 
+            <p style="color:rgb(59, 116, 231);" id="answerResult">answer result holder</p>
         </section>
 
         <section>
-            <div class = "Quiz timer">
+            <form id="resultForm">
+                <h2>All finished!</h2>
+                <p>You got __ questions right</p>
+                <p>with __ seconds left!</p>
+                <p>Your final quiz score is: __</p>
+                <input type="text" placeholder="Enter initials here" id="scoreInitials"></input>
+                <button class="submitScoreBtn" id="submitScore">Submit Score</button>
+            </form>
         </section>
     </main>
 
