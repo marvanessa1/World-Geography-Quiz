@@ -18,7 +18,7 @@
     <main>
         <section  class="welcomeMessage" id="welcomeMessage">
             <h2>Welcome!</h2>  
-            <p>Up for a challenge? You have 75 seconds to finish this quiz regarding word geography.  For razzle dazzle, incorrect answers will dock off 5 seconds from your timer, thus 5 seconds from your score. Press 'Start' to begin. Good luck!</p>
+            <p>Up for a challenge? You have 75 seconds to finish this quiz regarding word geography. Your final score is your time remaining. Incorrect answers will dock off 5 seconds from your timer, thus 5 seconds from your score.  Press 'Start' to begin. Good luck!</p>
             <button class="startButton" id="startButton">Start</button>
         </section>
 
@@ -33,15 +33,14 @@
                 <br>
                 <button class ="answer-choice"  id="answerButton4">Answer 4</button>
             </div> 
+            <hr>
             <p style="color:rgb(59, 116, 231);" id="answerResult">answer result holder</p>
         </section>
 
         <section>
             <form id="resultForm">
                 <h2>All finished!</h2>
-                <p>You got __ questions right</p>
-                <p>with __ seconds left!</p>
-                <p>Your final quiz score is: __</p>
+                <p>Your final score is: <span id="finalScore"></span></p>
                 <input type="text" placeholder="Enter initials here" id="scoreInitials"></input>
                 <button class="submitScoreBtn" id="submitScore">Submit Score</button>
             </form>

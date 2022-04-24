@@ -16,9 +16,11 @@ var answerChoiceEl = document.getElementById('answerResult')
 // Results section: form
 
 var resultsFormEl = document.getElementById('resultsForm');
-var 
+var finalScoreEl = document.getElementById('finalScore');
+var initialsEL = document.getElementById('scoreInitials');
+var submitScoreEl = document.getElementById('submitScore')
 
-var quizquestions = [{
+var quizQuestions = [{
     question: "How many continents are on Earth?",
     answer: ["5", "6", "7", "8" ],
     correctAnswer: "7"
