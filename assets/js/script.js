@@ -1,5 +1,8 @@
 //HTML elemements by Id
 
+// header
+var
+
 // Welcome section
 var welcomeEl = document.getElementById('welcomeMessage');
 var startButton = document.getElementById('startButton');
